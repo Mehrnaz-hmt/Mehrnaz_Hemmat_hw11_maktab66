@@ -15,7 +15,7 @@
   </head>
   <body>
     
-    <section class="container mt-5">
+    <section class="container mt-5" style="width: 550px">
       <button
         type="button"
         class="btn btn-success"
@@ -32,23 +32,18 @@
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >
-        <div class="modal-dialog">
+        <div class="modal-dialog" style="max-width: 810px;">
           <div class="modal-content">
             <div class="modal-header d-flex flex-column justify-content-start align-items-start">
               <h5 class="modal-title d-flex justify-content-start align-items-start" id="exampleModalLabel"
                 >Form validation</h5>
                 <div class="d-flex justify-content-start" align-items-start>
                     <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing 
+                        In this example we use <span class="text-danger">.was-validated </span> to indicate what's missing before submitting the form. 
                     </p>
                 </div>
              
-              <!-- <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button> -->
+             
             </div>
             <div class="modal-body">
               <form>
@@ -58,7 +53,8 @@
                 <div class="input-group has-validation">
                   <input
                     type="text"
-                    class="form-control is-invalid"
+                    class="form-control is-invalid" 
+                    placeholder="Enter Username"
                     id="validationServerUsername"
                     aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback"
                     required
@@ -70,14 +66,15 @@
                     Please fill out this field
                   </div>
                 </div>
+
+
                 <div class="mt-1">
                   <label for="validationServerUsername" class="form-label">Password</label>
-                    
-                  
                   <div class="input-group has-validation">
                     <input
-                      type="text"
+                      type="password"
                       class="form-control is-invalid"
+                      placeholder="Enter Password"
                       id="validationServerUsername"
                       aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback"
                       required
@@ -90,6 +87,7 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="mb-3 form-check mt-3">
                   <input
                     type="checkbox"
@@ -107,12 +105,7 @@
                 <button type="submit" class="btn btn-primary">Submit</button>
               </form>
             </div>
-            <!-- <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Send message</button>
-                
-              
-            </div> -->
+          
           </div>
         </div>
       </div>
