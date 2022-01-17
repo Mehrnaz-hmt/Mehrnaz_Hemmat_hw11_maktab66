@@ -13,24 +13,42 @@
     <title>Document</title>
   </head>
   <body>
+
+
     <div id="myDIV" class="header">
-      <h2 style="margin: 5px">To Do</h2>
-      <div class="cont">
+      <h2 class="todo">TODO</h2>
+      <img class="moon" src="images/icons/white-moon.png" alt="moon">
+      <div>
         <input type="text" onclick="newElement()" id="myInput" placeholder="Create a new todo..." />
-        <!-- <span onclick="newElement()" class="addBtn">Add</span> -->
       </div>
-     
-  
     </div>
+
+
+    
     <ul id="myUL">
-        <li>Hit the gym</li>
-        <li class="checked">Pay bills</li>
-        <li>Meet George</li>
-        <li>Buy eggs</li>
-        <li>Read a book</li>
-        <li>Organize office</li>
+        <li class="unchecked">Hit the gym</li>
+        <li> Pay bills</li>
+        <li> Meet George</li>
+        <li> Buy eggs</li>
+        <li> Read a book</li>
+        <li> Organize office</li>
+        <li class="left-items">
+          <div>
+            <p class="first-p">2 items left</p>
+            <p>Clear completed</p>
+          </div>
+        </li>
+        <li  class="last-li">
+          <div>
+            <span>All</span>
+            <span>Active</span>
+            <span>Completed</span>
+          </div>
+        </li>
       </ul>
    
+
+
 
     <script src="q-1.js"></script>
   </body>
