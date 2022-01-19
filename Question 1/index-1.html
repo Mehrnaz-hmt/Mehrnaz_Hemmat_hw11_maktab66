@@ -10,12 +10,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style-1.css" />
-    <title>Document</title>
+    <title>TODO</title>
   </head>
   <body>
 
 
-    <div id="myDIV" class="header">
+    <div class="header" id="myDIV">
       <h2 class="todo">TODO</h2>
       <img class="moon" src="images/icons/white-moon.png" alt="moon">
       <div>
@@ -26,16 +26,84 @@
 
     
     <ul id="myUL">
-        <li class="unchecked">Hit the gym</li>
-        <li> Pay bills</li>
-        <li> Meet George</li>
-        <li> Buy eggs</li>
-        <li> Read a book</li>
-        <li> Organize office</li>
+        <li class="my-li" onclick="lineThroughTextInLi()">
+          <div class="checked">
+            <div class="circle-checked">
+              <div class="check-icon">
+                <img class="check-icon" src="images/icons/check-mark-16.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="myUL-text" id="checked">
+            Hit the gym
+          </div>
+        </li>
+        <li class="my-li">
+          <div class="checked">
+            <div class="circle-checked">
+              <div class="check-icon">
+                <img class="check-icon" src="images/icons/check-mark-16.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="myUL-text">
+            Reading Book
+          </div>
+        </li>
+        <li class="my-li">
+          <div class="checked">
+            <div class="circle-checked">
+              <div class="check-icon">
+                <img class="check-icon" src="images/icons/check-mark-16.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="myUL-text">
+            Listen To music
+          </div>
+        </li>
+       
+        <li class="my-li">
+          <div class="checked">
+            <div class="circle-checked">
+              <div class="check-icon">
+                <img class="check-icon" src="images/icons/check-mark-16.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="myUL-text">
+            Buying fruits
+          </div>
+        </li>
+        <li class="my-li">
+          <div class="checked">
+            <div class="circle-checked">
+              <div class="check-icon">
+                <img class="check-icon" src="images/icons/check-mark-16.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="myUL-text">
+            Write letter
+          </div>
+        </li>
+        <li class="my-li">
+          <div class="checked">
+            <div class="circle-checked">
+              <div class="check-icon">
+                <img class="check-icon" src="images/icons/check-mark-16.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="myUL-text">
+            Organize office
+          </div>
+        </li>
+        
         <li class="left-items">
           <div>
-            <p class="first-p">2 items left</p>
-            <p>Clear completed</p>
+            <p class="first-p"> <span class="pending-items"></span> items left</p>
+            <p class="clear-completed">Clear completed</p>
           </div>
         </li>
         <li  class="last-li">

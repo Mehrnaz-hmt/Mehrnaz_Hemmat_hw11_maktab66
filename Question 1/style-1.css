@@ -5,7 +5,6 @@ body {
   margin: 0;
   min-width: 250px;
 }
-
 /* Include the padding and border in an element's total width and height */
 * {
   box-sizing: border-box;
@@ -21,10 +20,9 @@ ul {
 
 /* Style the list items */
 ul li {
- 
   cursor: pointer;
   position: relative;
-  padding: 12px 8px 12px 40px;
+  padding: 12px 8px 5px 10px;
   list-style-type: none;
   background-color: lightyellow;
   color: rgb(44, 43, 43);
@@ -48,14 +46,16 @@ ul li {
 
 /* Darker background-color on hover */
 ul li:hover {
-  background: #ddd;
+  background: rgb(247, 244, 244);
 }
 
 /* When clicked on, add a background color and strike out text */
-ul li.checked {
+#checked:hover {
   color: rgb(90, 86, 86);
   text-decoration: line-through 2px;
 }
+
+
 
 /* Add a "checked" mark when clicked on */
 ul li.checked::before {
@@ -132,6 +132,7 @@ input {
 .todo {
   margin-bottom:4%;
   display: inline-block;
+  letter-spacing: 5px;
 }
 
 .addBtn:hover {
@@ -152,7 +153,7 @@ input {
 
 .left-items {
   padding: 1px 10px 1px 10px ;
-  
+  cursor: auto;
 }
 
 .last-li {
@@ -173,8 +174,37 @@ input {
   color: rgb(87, 84, 84);
   margin: 2%;
 }
+.my-li {
+  display: flex;
+  flex-direction: row;
 
+}
 
+.circle-checked {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1.75px solid rgb(163, 159, 159);
+  border-radius: 50%;
+  padding-left: 0;
+}
+.check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.check-icon {
+  width: 12px;
+}
+.circle-checked:hover {
+background:  linear-gradient(hsl(192, 100%, 67%) ,hsl(280, 87%, 65%));
+}
+
+.myUL-text {
+  margin-left: 10px;
+}
 
 /*Media query*/
 @media screen and (max-width:576px) {
