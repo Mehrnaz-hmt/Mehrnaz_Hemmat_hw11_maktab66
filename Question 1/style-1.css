@@ -55,8 +55,6 @@ ul li:hover {
   text-decoration: line-through 2px;
 }
 
-
-
 /* Add a "checked" mark when clicked on */
 ul li.checked::before {
   content: "";
@@ -67,20 +65,19 @@ ul li.checked::before {
   left: 16px;
   transform: rotate(45deg);
   height: 20px;
-  width:20px;
+  width: 20px;
   border: 0.5px solid rgb(141, 138, 138);
   border-radius: 50%;
-  background-image: linear-gradient(to right,#36d1c2,purple);
+  background-image: linear-gradient(to right, #36d1c2, purple);
 }
 
- ul li span.unchecked::before {
+ul li span.unchecked::before {
   height: 20px;
-  width:20px;
+  width: 20px;
   background-color: lightpink;
   border: 0.5px solid rgb(141, 138, 138);
   border-radius: 50%;
 }
-
 
 /* Style the close button */
 .close {
@@ -102,7 +99,6 @@ ul li.checked::before {
   padding: 80px 8px;
   color: white;
   text-align: left;
-  
 }
 
 /* Clear floats after the header */
@@ -110,7 +106,7 @@ ul li.checked::before {
   content: "";
   display: table;
   clear: both;
-} */
+}  */
 
 /* Style the input */
 input {
@@ -126,11 +122,11 @@ input {
 .moon {
   float: right;
   object-fit: contain;
-  width:30px;
+  width: 30px;
   margin-top: 20px;
 }
 .todo {
-  margin-bottom:4%;
+  margin-bottom: 4%;
   display: inline-block;
   letter-spacing: 5px;
 }
@@ -139,7 +135,7 @@ input {
   background-color: #bbb;
 }
 
-.left-items div  {
+.left-items div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -149,10 +145,8 @@ input {
   margin-right: 20px;
 }
 
- 
-
 .left-items {
-  padding: 1px 10px 1px 10px ;
+  padding: 1px 10px 1px 10px;
   cursor: auto;
 }
 
@@ -165,19 +159,18 @@ input {
 
 .left-items div p {
   display: flex;
-  font-size:medium;
+  font-size: medium;
   color: rgb(160, 157, 157);
 }
 
 .last-li div span {
-  font-size:medium;
+  font-size: medium;
   color: rgb(87, 84, 84);
   margin: 2%;
 }
 .my-li {
   display: flex;
   flex-direction: row;
-
 }
 
 .circle-checked {
@@ -199,7 +192,7 @@ input {
   width: 12px;
 }
 .circle-checked:hover {
-background:  linear-gradient(hsl(192, 100%, 67%) ,hsl(280, 87%, 65%));
+  background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
 }
 
 .myUL-text {
@@ -207,15 +200,16 @@ background:  linear-gradient(hsl(192, 100%, 67%) ,hsl(280, 87%, 65%));
 }
 
 /*Media query*/
-@media screen and (max-width:576px) {
-  ul li {
-   min-width: 250px;
+@media screen and (max-width: 576px) {
+  ul {
+    min-width: 250px;
     margin-left: auto;
     margin-right: auto;
   }
-  input {
-   min-width: 100%;
+  .header {
+    min-width: 250px;
     margin-left: auto;
     margin-right: auto;
+    /* margin-right: auto; */
   }
 }
